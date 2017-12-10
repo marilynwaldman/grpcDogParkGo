@@ -4,11 +4,10 @@ import (
 	"log"
 	"net"
 	"strings"
-
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
 
-	pb "github.com/user/dogParkGrpc/dogpark"
+	pb "github.com/user/grpcDogParkGo/dogpark"
 )
 
 const (

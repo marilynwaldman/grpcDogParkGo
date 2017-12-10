@@ -7,7 +7,7 @@ import (
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
 
-	pb "github.com/user/dogParkGrpc/dogpark"
+	pb "github.com/user/grpcDogParkGo/dogpark"
 )
 
 const (
@@ -55,24 +55,18 @@ func main() {
 	client := pb.NewDogParkClient(conn)
 
 	dogpark := &pb.DogParkRequest{
-		Id:    101,
-		Name:  "Shiju Varghese",
-		Website: "shiju@xyz.com",
+		Id:    100,
+		Name:  "Boulder Dog Park",
+		Website: "BoulderDogPark.com",
 		Addresses: []*pb.DogParkRequest_Address{
 			&pb.DogParkRequest_Address{
-				Street:            "1 Mission Street",
-				City:              "San Francisco",
-				State:             "CA",
-				Zip:               "94105",
+				Street:            "900 Broadway",
+				City:              "Boulder",
+				State:             "C0",
+				Zip:               "80301",
 				IsShippingAddress: false,
 			},
-			&pb.DogParkRequest_Address{
-				Street:            "Greenfield",
-				City:              "Kochi",
-				State:             "KL",
-				Zip:               "68356",
-				IsShippingAddress: true,
-			},
+
 		},
 	}
 
@@ -81,15 +75,14 @@ func main() {
 
 	dogpark = &pb.DogParkRequest{
 		Id:    102,
-		Name:  "Irene Rose",
-		Website: "irene@xyz.com",
+		Name:  "San Francisco Dog Park",
+		Website: "SFDogPark.com",
 		Addresses: []*pb.DogParkRequest_Address{
 			&pb.DogParkRequest_Address{
 				Street:            "1 Mission Street",
 				City:              "San Francisco",
 				State:             "CA",
 				Zip:               "94105",
-				IsShippingAddress: true,
 			},
 		},
 	}

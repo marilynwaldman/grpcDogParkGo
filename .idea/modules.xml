@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/dogParkGrpc.iml" filepath="$PROJECT_DIR$/dogParkGrpc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/grpcDogParkGo.iml" filepath="$PROJECT_DIR$/grpcDogParkGo.iml" />
     </modules>
   </component>
 </project>
