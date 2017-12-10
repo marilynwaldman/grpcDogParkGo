@@ -21,7 +21,7 @@ message DogParkRequest {
     string city = 2;
     string state = 3;
     string zip = 4;
-    bool isShippingAddress = 5; 
+
   }
 
   repeated Address addresses = 4;

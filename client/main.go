@@ -64,7 +64,7 @@ func main() {
 				City:              "Boulder",
 				State:             "C0",
 				Zip:               "80301",
-				IsShippingAddress: false,
+
 			},
 
 		},
