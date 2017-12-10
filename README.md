@@ -17,3 +17,11 @@ Run the server:
    
 Run the client:
    go run client/main.go  
+
+
+Dockerize:
+
+$ docker build -t local/server -f Dockerfile.server .
+$ docker build -t local/api -f Dockerfile.api .
+
+docker run --rm -p 50051:50051 local/server

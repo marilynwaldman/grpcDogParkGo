@@ -23,7 +23,6 @@ message DogParkRequest {
     string zip = 4;
 
   }
-
   repeated Address addresses = 4;
 }
 
