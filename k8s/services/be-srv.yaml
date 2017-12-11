@@ -1,0 +1,12 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: dogpark-backend
+spec:
+  type: LoadBalancer
+  ports:
+   - port: 50051
+     targetPort: backend
+  selector:
+     app: dogpark
+     role: backend

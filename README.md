@@ -22,6 +22,7 @@ Run the client:
 Dockerize:
 
 $ docker build -t local/server -f Dockerfile.server .
-$ docker build -t local/api -f Dockerfile.api .
+$ docker build -t local/client -f Dockerfile.client .
 
 docker run --rm -p 50051:50051 local/server
+docker run --rm  local/client
